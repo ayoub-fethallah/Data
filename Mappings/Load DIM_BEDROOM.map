@@ -20,22 +20,32 @@
     </field>
     <field id="_OZg28j9vEe2lOtAB1hS8uw" enable="true" insert="true" name="bdr_bath" ref="resource.md#_39gsAT5SEe2qsNoEoNlFdg?fileId=_s0M1QD5SEe2qsNoEoNlFdg$type=md$name=bdr_bath?" update="true">
       <expression id="_PHR74T9vEe2lOtAB1hS8uw" setDescriptorRef="_PHQtwD9vEe2lOtAB1hS8uw">
-        <expression>T_BEDROOM.BDR_BATH</expression>
+        <expression><![CDATA[case
+when T_BEDROOM.BDR_BATH = 'TRUE' then 1
+else 0
+end]]></expression>
       </expression>
     </field>
     <field id="_OZheAD9vEe2lOtAB1hS8uw" enable="true" insert="true" name="bdr_shower" ref="resource.md#_39p18T5SEe2qsNoEoNlFdg?fileId=_s0M1QD5SEe2qsNoEoNlFdg$type=md$name=bdr_shower?" update="true">
       <expression id="_PHSi8D9vEe2lOtAB1hS8uw" setDescriptorRef="_PHQtwD9vEe2lOtAB1hS8uw">
-        <expression>T_BEDROOM.BDR_SHOWER</expression>
+        <expression><![CDATA[case
+when T_BEDROOM.BDR_SHOWER = 'TRUE' then 1
+else 0
+end]]></expression>
       </expression>
     </field>
     <field id="_OZheAj9vEe2lOtAB1hS8uw" enable="true" insert="true" name="bdr_bed_count" ref="resource.md#_395GgT5SEe2qsNoEoNlFdg?fileId=_s0M1QD5SEe2qsNoEoNlFdg$type=md$name=bdr_bed_count?" update="true">
       <expression id="_PHSi8T9vEe2lOtAB1hS8uw" setDescriptorRef="_PHQtwD9vEe2lOtAB1hS8uw">
-        <expression>T_BEDROOM.BDR_BED_COUNT</expression>
+        <expression>convert(T_BEDROOM.BDR_BED_COUNT,numeric)</expression>
       </expression>
     </field>
     <field id="_OZg28T9vEe2lOtAB1hS8uw" enable="true" insert="true" name="bdr_floor" ref="resource.md#_39YwMT5SEe2qsNoEoNlFdg?fileId=_s0M1QD5SEe2qsNoEoNlFdg$type=md$name=bdr_floor?" update="true">
       <expression id="_PHTKAD9vEe2lOtAB1hS8uw" setDescriptorRef="_PHQtwD9vEe2lOtAB1hS8uw">
-        <expression>T_BEDROOM.BDR_FLOOR</expression>
+        <expression><![CDATA[case
+when lower(T_BEDROOM.BDR_FLOOR) = 'gf' then 0
+when lower(T_BEDROOM.BDR_FLOOR) = '1st' then 1
+when lower(T_BEDROOM.BDR_FLOOR) = '2nd' then 2
+end]]></expression>
       </expression>
     </field>
     <field id="_OZiFED9vEe2lOtAB1hS8uw" enable="true" insert="true" name="bdr_phone_number" ref="resource.md#_3-AbQT5SEe2qsNoEoNlFdg?fileId=_s0M1QD5SEe2qsNoEoNlFdg$type=md$name=bdr_phone_number?" update="true">
@@ -45,7 +55,10 @@
     </field>
     <field id="_OZheAT9vEe2lOtAB1hS8uw" enable="true" insert="true" name="bdr_bar" ref="resource.md#_39xxwT5SEe2qsNoEoNlFdg?fileId=_s0M1QD5SEe2qsNoEoNlFdg$type=md$name=bdr_bar?" update="true">
       <expression id="_PHTxED9vEe2lOtAB1hS8uw" setDescriptorRef="_PHQtwD9vEe2lOtAB1hS8uw">
-        <expression>T_BEDROOM.BDR_BAR</expression>
+        <expression><![CDATA[case
+when T_BEDROOM.BDR_BAR = 'TRUE' then 1
+else 0
+end]]></expression>
       </expression>
     </field>
     <field id="_OZiFET9vEe2lOtAB1hS8uw" enable="true" insert="true" name="bdr_type" ref="resource.md#_3-HwAD5SEe2qsNoEoNlFdg?fileId=_s0M1QD5SEe2qsNoEoNlFdg$type=md$name=bdr_type?" update="true">
@@ -53,9 +66,9 @@
         <expression>T_BEDROOM.BDR_TYPE</expression>
       </expression>
     </field>
-    <field id="_OZisID9vEe2lOtAB1hS8uw" name="update_date" ref="resource.md#_3-aq8T5SEe2qsNoEoNlFdg?fileId=_s0M1QD5SEe2qsNoEoNlFdg$type=md$name=update_date?">
-      <expression id="_PHU_MD9vEe2lOtAB1hS8uw" setDescriptorRef="_PHQtwD9vEe2lOtAB1hS8uw">
-        <expression></expression>
+    <field id="_OZisID9vEe2lOtAB1hS8uw" enable="true" insert="true" name="update_date" ref="resource.md#_3-aq8T5SEe2qsNoEoNlFdg?fileId=_s0M1QD5SEe2qsNoEoNlFdg$type=md$name=update_date?" update="true">
+      <expression id="_PHU_MD9vEe2lOtAB1hS8uw" location="TRG" setDescriptorRef="_PHQtwD9vEe2lOtAB1hS8uw">
+        <expression>current_timestamp</expression>
       </expression>
     </field>
     <field id="_OZg28D9vEe2lOtAB1hS8uw" enable="true" insert="true" name="bdr_number" ref="resource.md#_39RbcT5SEe2qsNoEoNlFdg?fileId=_s0M1QD5SEe2qsNoEoNlFdg$type=md$name=bdr_number?" update="true">
