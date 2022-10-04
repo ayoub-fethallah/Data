@@ -137,13 +137,13 @@
   <element xmi:type="map:Map" href="resource.map#_yqObcEApEe2LVIqS0m1iJA?fileId=_yqObcEApEe2LVIqS0m1iJA$type=map$name=Load%20DIM_GEOGRAPHY?"/>
   <edges xmi:type="notation:Edge" xmi:id="_rSe8YEAqEe2LVIqS0m1iJA" type="joinLink" source="_rSIXEEAqEe2LVIqS0m1iJA" target="_13UCgEApEe2LVIqS0m1iJA">
     <element xsi:nil="true"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rSe8YUAqEe2LVIqS0m1iJA" points="[17, 0, 347, 74]$[77, 0, 407, 74]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rSe8YUAqEe2LVIqS0m1iJA" points="[0, 0, 131, 43]$[60, 0, 191, 43]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_y66tYEAqEe2LVIqS0m1iJA" id="(1.0,0.48)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_y66tYUAqEe2LVIqS0m1iJA" id="(1.0,0.8640776699029126)"/>
   </edges>
   <edges xmi:type="notation:Edge" xmi:id="_rSgxkEAqEe2LVIqS0m1iJA" type="joinLink" source="_rSIXEEAqEe2LVIqS0m1iJA" target="_2RtfgEApEe2LVIqS0m1iJA">
     <element xsi:nil="true"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rSgxkUAqEe2LVIqS0m1iJA" points="[17, 0, 352, -64]$[77, 0, 412, -64]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rSgxkUAqEe2LVIqS0m1iJA" points="[0, 0, 94, -44]$[60, 0, 154, -44]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_y65fQEAqEe2LVIqS0m1iJA" id="(1.0,0.48)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_y66GUEAqEe2LVIqS0m1iJA" id="(1.0,0.1262135922330097)"/>
   </edges>
